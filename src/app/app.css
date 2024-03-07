@@ -244,6 +244,7 @@ body {
   width: 20px;
   height: 20px;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .lang-menu-en {
@@ -258,6 +259,8 @@ body {
 .shopping-cart {
   padding: 12px;
   margin-left: 8px;
+  position: relative;
+  cursor: pointer;
 }
 
 .icon-shopping-cart {
@@ -266,6 +269,10 @@ body {
 }
 
 .anchorOriginTopRight {
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  box-sizing: border-box;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 500;
   font-size: 0.75rem;
@@ -276,8 +283,11 @@ body {
   border-radius: 10px;
   background-color: rgb(250, 137, 107);
   color: rgb(255, 255, 255);
+  position: absolute;
   top: 0px;
   right: 0px;
+  /* transform: scale(1) translate(50%, -50%);
+  transform-origin: 100% 0%; */
 }
 
 @media (min-width: 600px) {

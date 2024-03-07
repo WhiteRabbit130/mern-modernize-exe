@@ -1,6 +1,6 @@
 import logo from '../assets/logo.svg';
 import './app.css';
-import { IconMenu2, IconSearch, IconShoppingCart } from '@tabler/icons-react';
+import { IconMenu2, IconSearch, IconShoppingCart, IconBellRinging } from '@tabler/icons-react';
 import flagEnSvg from '../assets/flags/icon-flag-en.svg';
 
 function App() {
@@ -58,6 +58,18 @@ function App() {
             <div className="shopping-cart">
               <span className="icon-shopping-cart">
                 <IconShoppingCart
+                  size={21}
+                  color="currentColor"
+                  stroke={1.5}
+                  strokeLinejoin="round"
+                  strokeLinecap="round"
+                />
+                <span className="anchorOriginTopRight">0</span>
+              </span>
+            </div>
+            <div className="notification">
+              <span className="icon-notification">
+                <IconBellRinging
                   size={21}
                   color="currentColor"
                   stroke={1.5}
