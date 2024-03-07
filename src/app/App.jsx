@@ -1,5 +1,6 @@
 import logo from '../assets/logo.svg';
 import './app.css';
+import IconButton from '@mui/material/IconButton';
 import { IconMenu2, IconSearch, IconShoppingCart, IconBellRinging } from '@tabler/icons-react';
 import flagEnSvg from '../assets/flags/icon-flag-en.svg';
 
@@ -19,7 +20,17 @@ function App() {
       <div className="container">
         <header className='header'>
           <div className="left-header">
-            <button className="btn-control-navbar" tabindex="0" type="button" aria-label="menu">
+            <IconButton aria-label="menu">
+              <IconMenu2 
+                  size={20}
+                  color="currentColor"
+                  stroke={2}
+                  strokeLinejoin="round"
+                  strokeLinecap="round"
+                />
+                <span className="hover-grey-background"></span>
+            </IconButton>
+            {/* <button className="btn-control-navbar" tabindex="0" type="button" aria-label="menu">
               <IconMenu2 
                 size={20}
                 color="currentColor"
@@ -27,7 +38,7 @@ function App() {
                 strokeLinejoin="round"
                 strokeLinecap="round"
               />
-              <span className="hover-grey-background"></span></button>
+              <span className="hover-grey-background"></span></button> */}
             <button className="btn-search-menu grey-background" tabindex="0" type="button" aria-label="show 4 new mails" aria-controls="search-menu" aria-haspopup="true">
                <IconSearch
                 size={16}
