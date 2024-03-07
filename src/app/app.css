@@ -148,60 +148,8 @@ body {
 
 
 /* Left Header CSS */
-.btn-control-navbar {
-  display: inline-flex;
-  /* -webkit-box-align: center; */
-  align-items: center;
-  /* -webkit-box-pack: center; */
-  justify-content: center;
-  position: relative;
-  /* box-sizing: border-box; */
-  -webkit-tap-highlight-color: transparent;
-  background-color: transparent;
-  /* outline: 0px; */
-  border: 0px;
-  margin: 0px;
-  cursor: pointer;
-  user-select: none;
-  vertical-align: middle;
-  appearance: none;
-  text-decoration: none;
-  text-align: center;
-  flex: 0 0 auto;
-  font-size: 1.5rem;
-  padding: 8px;
-  border-radius: 50%;
-  overflow: visible;
-  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  color: inherit;
-}
-
-.btn-search-menu {
-  display: inline-flex;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  justify-content: center;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
-  background-color: transparent;
-  outline: 0px;
-  border: 0px;
-  margin: 0px;
-  cursor: pointer;
-  user-select: none;
-  vertical-align: middle;
-  appearance: none;
-  text-decoration: none;
-  text-align: center;
-  flex: 0 0 auto;
-  border-radius: 50%;
-  overflow: visible;
-  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  color: inherit;
-  padding: 12px;
-  font-size: 1.75rem;
+.left-header {
+  color: rgb(42, 53, 71);
 }
 
 .header-apps-dropmenu {
@@ -217,7 +165,7 @@ body {
   margin-left: 2px;
 }
 
-.header-menu {
+/* .header-menu {
   text-decoration: none;
   padding: 5px 15px;
   color: rgb(42, 53, 71);
@@ -229,7 +177,7 @@ body {
   vertical-align: middle;
   align-items: center;
   min-width: 64px;
-}
+} */
 
 
 /* Right Header CSS */
