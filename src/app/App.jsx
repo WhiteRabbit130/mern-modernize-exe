@@ -55,20 +55,20 @@ function App() {
             <div className="lang">
               <img src={flagEnSvg} alt="en" className='lang-menu-en' />
             </div>
-            <div className="shopping-cart">
-              <span className="icon-shopping-cart">
-                <IconShoppingCart
-                  size={21}
-                  color="currentColor"
-                  stroke={1.5}
-                  strokeLinejoin="round"
-                  strokeLinecap="round"
-                />
-                <span className="anchorOriginTopRight">0</span>
-              </span>
-            </div>
-            <div className="notification">
-              <span className="icon-notification">
+            {/* <div className="shopping-cart rh-ml"> */}
+            <span className="icon-shopping-cart rh-ml">
+              <IconShoppingCart
+                size={21}
+                color="currentColor"
+                stroke={1.5}
+                strokeLinejoin="round"
+                strokeLinecap="round"
+              />
+              <span className="show-shopping-cart topRight">0</span>
+            </span>
+            {/* </div> */}
+            {/* <div className="notification rh-ml"> */}
+              <span className="icon-notification rh-ml">
                 <IconBellRinging
                   size={21}
                   color="currentColor"
@@ -76,9 +76,16 @@ function App() {
                   strokeLinejoin="round"
                   strokeLinecap="round"
                 />
-                <span className="anchorOriginTopRight">0</span>
+                <span className="show-notification topRight"></span>
               </span>
-            </div>
+            {/* </div> */}
+            {/* <div className="profile rh-ml"> */}
+              <button type='button' className="btn-profile rh-ml">
+                <div className="profile">
+                  <img src="/assets/img/user-1.jpg" alt="user-1" className='icon-profile'/>
+                </div>
+              </button>
+            {/* </div> */}
           </div>          
         </header>
 
