@@ -1,5 +1,7 @@
 import logo from '../assets/logo.svg';
 import './app.css';
+import { IconMenu2, IconSearch, IconShoppingCart } from '@tabler/icons-react';
+import flagEnSvg from '../assets/flags/icon-flag-en.svg';
 
 function App() {
   return (
@@ -17,8 +19,24 @@ function App() {
       <div className="container">
         <header className='header'>
           <div className="left-header">
-            <button className="btn-control-navbar" tabindex="0" type="button" aria-label="menu"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg><span className="hover-grey-background"></span></button>
-            <button className="btn-search-menu grey-background" tabindex="0" type="button" aria-label="show 4 new mails" aria-controls="search-menu" aria-haspopup="true"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="16" height="16" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="10" cy="10" r="7"></circle><line x1="21" y1="21" x2="15" y2="15"></line></svg><span className="hover-grey-background"></span></button>
+            <button className="btn-control-navbar" tabindex="0" type="button" aria-label="menu">
+              <IconMenu2 
+                size={20}
+                color="currentColor"
+                stroke={2}
+                strokeLinejoin="round"
+                strokeLinecap="round"
+              />
+              <span className="hover-grey-background"></span></button>
+            <button className="btn-search-menu grey-background" tabindex="0" type="button" aria-label="show 4 new mails" aria-controls="search-menu" aria-haspopup="true">
+               <IconSearch
+                size={16}
+                color="currentColor"
+                stroke={2}
+                strokeLinejoin="round"
+                strokeLinecap="round"
+              />
+               <span className="hover-grey-background"></span></button>
             <button className="header-apps-dropmenu" tabindex="0" type="button" aria-label="show 11 new notifications" aria-controls="msgs-menu" aria-haspopup="true">
               Apps
               <span className="dropdown-icon">
@@ -29,10 +47,26 @@ function App() {
               </span>
               <span className=""></span>
             </button>
-            <a href="" className="header-menu">Chat</a>
+            <a href="/" className="header-menu">Chat</a>
+            <a href="/" className="header-menu">Calendar</a>
+            <a href="/" className="header-menu">Email</a>
           </div>
           <div className="right-header">
-            
+            <div className="lang">
+              <img src={flagEnSvg} alt="en" className='lang-menu-en' />
+            </div>
+            <div className="shopping-cart">
+              <span className="icon-shopping-cart">
+                <IconShoppingCart
+                  size={21}
+                  color="currentColor"
+                  stroke={1.5}
+                  strokeLinejoin="round"
+                  strokeLinecap="round"
+                />
+                <span className="anchorOriginTopRight">0</span>
+              </span>
+            </div>
           </div>          
         </header>
 
