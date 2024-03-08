@@ -1,6 +1,7 @@
 import { atom } from 'recoil';
 
-export const inputValueState = atom({
-  key: 'inputValueState',
-  default: '',
+// Define Recoil atom to store input data
+export const inputDataState = atom({
+  key: 'inputDataState',
+  default: localStorage.getItem('inputData') || '',
 });

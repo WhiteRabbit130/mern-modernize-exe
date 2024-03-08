@@ -136,7 +136,13 @@ h6 {
   max-height: 100%;
   height: calc(100% - 190px);
   overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #888 #fff;
 }
+
+/* .navbar-body::-webkit-scrollbar {
+  width: 12px;
+} */
 
 .navbar-wrapper {  
   width: inherit;

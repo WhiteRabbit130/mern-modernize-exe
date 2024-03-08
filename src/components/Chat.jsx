@@ -1,18 +1,20 @@
 import React from 'react';
 import { useRecoilState } from 'recoil';
-import { inputValueState } from '../assets/js/atoms';
+import { inputDataState  } from '../assets/js/atoms';
 
 const Chat = () => {
-    const [inputValue, setInputValue] = useRecoilState(inputValueState);
+    const [inputData, setInputData] = useRecoilState(inputDataState );
 
-    const handleChange = (event) => {
-        setInputValue(event.target.value);
+    const handleChange = (e) => {
+        const value = e.target.value;
+        setInputData(value);
+        localStorage.setItem('inputData', value);
     };
 
     return (
         <>
-            <input type="text" className="msg-box" value={inputValue} onChange={handleChange} ></input>
-            <p>You typed: {inputValue}</p>
+            <input type="text" className="msg-box" value={inputData} onChange={handleChange} ></input>
+            <p>You typed: {inputData}</p>
         </>
     )
 }
