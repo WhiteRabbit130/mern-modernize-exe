@@ -1,6 +1,6 @@
 import React from 'react';
 import { useRecoilState } from 'recoil';
-import { inputDataState  } from '../assets/js/atoms';
+import { inputDataState  } from '../store/atoms';
 
 const Chat = () => {
     const [inputData, setInputData] = useRecoilState(inputDataState );

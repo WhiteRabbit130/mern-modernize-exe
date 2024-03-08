@@ -8,8 +8,8 @@ import { RecoilRoot } from 'recoil';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Header from '../components/Header';
-import Home from '../components/Home';
-import Chat from '../components/Chat';
+import Home from '../pages/Home';
+import Chat from '../pages/Chat';
 
 function App() {
   const [showNavbar, setShowNavbar] = useState(true);
@@ -42,7 +42,7 @@ function App() {
           <div className="main-content">
             <Routes>
               <Route path="/" exact element={ <Home />} />              
-                <Route path="/chat" exact element={ <RecoilRoot><Chat /></RecoilRoot> } /> 
+                <Route path="/chat" exact element={ <RecoilRoot><Chat /></RecoilRoot>} /> 
             </Routes>
           </div>
         </div>
