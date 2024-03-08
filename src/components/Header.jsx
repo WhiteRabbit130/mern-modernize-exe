@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Header(props) {
     const { toggleNavbar } = props;
 
@@ -18,9 +20,10 @@ export default function Header(props) {
               </span>
               <span className=""></span>
             </button>
-            <a href="/chat" className="header-menu header-hover" >Chat</a>
-            <a href="/" className="header-menu header-hover">Calendar</a>
-            <a href="/" className="header-menu header-hover">Email</a>
+            
+            <Link to="/chat" className="header-menu header-hover">Chat</Link>
+            <Link to="/" className="header-menu header-hover">Calendar</Link>
+            <Link to="/" className="header-menu header-hover">Email</Link>
           </div>
           <div className="right-header">
             <button type='button' className="lang rh-border header-hover">

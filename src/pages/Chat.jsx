@@ -1,8 +1,15 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useRecoilState } from 'recoil';
 import { inputDataState  } from '../store/atoms';
 
 const Chat = () => {
+    const navigate = useNavigate();
+    
+    const goToHome = () => {
+        navigate('/');
+    };
+
     const [inputData, setInputData] = useRecoilState(inputDataState );
 
     const handleChange = (e) => {
@@ -15,6 +22,7 @@ const Chat = () => {
         <>
             <input type="text" className="msg-box" value={inputData} onChange={handleChange} ></input>
             <p>You typed: {inputData}</p>
+            <button onClick={goToHome}>Go to Home</button>
         </>
     )
 }
