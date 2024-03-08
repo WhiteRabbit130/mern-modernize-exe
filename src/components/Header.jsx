@@ -18,7 +18,7 @@ export default function Header(props) {
               </span>
               <span className=""></span>
             </button>
-            <a href="/" className="header-menu header-hover" >Chat</a>
+            <a href="/chat" className="header-menu header-hover" >Chat</a>
             <a href="/" className="header-menu header-hover">Calendar</a>
             <a href="/" className="header-menu header-hover">Email</a>
           </div>

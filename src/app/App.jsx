@@ -4,10 +4,12 @@ import "@fontsource/plus-jakarta-sans/400.css";
 import "@fontsource/plus-jakarta-sans/400-italic.css";
 
 import React, { useState, useEffect  } from 'react'; 
+import { RecoilRoot } from 'recoil';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Header from '../components/Header';
 import Home from '../components/Home';
+import Chat from '../components/Chat';
 
 function App() {
   const [showNavbar, setShowNavbar] = useState(true);
@@ -39,7 +41,8 @@ function App() {
 
           <div className="main-content">
             <Routes>
-              <Route path="/home" exact element={ <Home />} />
+              <Route path="/" exact element={ <Home />} />              
+                <Route path="/chat" exact element={ <RecoilRoot><Chat /></RecoilRoot> } /> 
             </Routes>
           </div>
         </div>

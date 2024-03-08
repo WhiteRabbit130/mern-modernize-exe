@@ -307,7 +307,7 @@ h6 {
 }
 /*--------------- End Navigation CSS ---------------*/
 
-/*--------------- Container CSS ---------------*/
+
 .container {
   /* display: flex;
   -webkit-box-flex: 1;
@@ -319,84 +319,25 @@ h6 {
   /* background-color: transparent; */
 }
 
-/* Header CSS */
+/*--------------- Header CSS ---------------*/
 .header {
-  /* transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; */
   position: sticky;
   top: 0px;
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  /* justify-content: center; */
-  /* flex-shrink: 0; */
   width: 100%;
   padding-left: 16px;
   padding-right: 16px;
   min-height: 56px;
-  /* box-sizing: border-box; */
-  /* z-index: 1100; */
-  /* left: auto; */
-  /* right: 0px; */
   color: rgb(42, 53, 71);
-  /* box-shadow: none; */
   background: rgb(255, 255, 255);
-  /* -webkit-box-pack: center; */
-  /* backdrop-filter: blur(4px); */
 }
 
 .header-hover:hover {
   background-color: rgba(42, 53, 71, 0.1);
 } 
-/* .header-content {
-  position: relative;
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  padding-left: 16px;
-  padding-right: 16px;
-  min-height: 56px;
-  width: 100%;
-  color: rgb(42, 53, 71);
-} */
-
-/* .hover-grey-background {
-  overflow: hidden;
-  pointer-events: none;
-  position: absolute;
-  z-index: 0;
-  inset: 0px;
-  border-radius: inherit;
-}
-
-.grey-background {
-  display: inline-flex;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  justify-content: center;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
-  background-color: transparent;
-  outline: 0px;
-  border: 0px;
-  margin: 0px;
-  cursor: pointer;
-  user-select: none;
-  vertical-align: middle;
-  appearance: none;
-  text-decoration: none;
-  text-align: center;
-  flex: 0 0 auto;
-  border-radius: 50%;
-  overflow: visible;
-  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  color: inherit;
-  padding: 12px;
-  font-size: 1.75rem;
-} */
-
 
 /* Left Header CSS */
 .left-header {
@@ -532,7 +473,6 @@ h6 {
   border-radius: 10px;
   background-color: rgb(250, 137, 107);
   color: rgb(255, 255, 255);
-  /* transform: scale(1) translate(50%, -50%); */
   transform-origin: 100% 0%; 
 }
 
@@ -562,9 +502,9 @@ h6 {
 .show-header-menu {
   display: inherit;
 }
+/*--------------- End Header CSS ---------------*/
 
-
-/* Content CSS */
+/*--------------- Content CSS ---------------*/
 .main-content {
   width: 100%;
   margin-left: auto;
@@ -598,18 +538,25 @@ h6 {
 
 .contents {
   display: grid;
-  /* grid-template-columns: auto auto auto auto auto auto; */
-  /* grid-template-rows: 161.82px 510.54px 453.68px 470.94px; */
   gap: 24px;
-  /* min-height: calc(-150px + 100vh); */
 }
 
+.msg-box {
+  width: 25%;
+  padding: 10px 15px;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  border: 0;
+  border-radius: 7px;
+  box-shadow: rgba(145, 158, 171) 0px 0px 2px 0px, rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+}
+/*--------------- End Content CSS ---------------*/
+
+/*--------------- Responsive ---------------*/
 @media (min-width: 600px) {
-  .grid-col-span2 { grid-column-end: span 2; }
   .grid-col-span3 { grid-column-end: span 3; }
-  .grid-col-span4 { grid-column-end: span 4; }
-  .grid-col-span5 { grid-column-end: span 5; }
-  .grid-col-span6 { grid-column-end: span 6; }
 
   .header {
     min-height: 70px;
@@ -630,15 +577,8 @@ h6 {
 
 @media (min-width: 1200px) {  
   .grid-span2 { grid-column-end: span 2; }
-  .grid-span3 { grid-column-end: span 3; }
   .grid-span4 { grid-column-end: span 4; }
-  .grid-span5 { grid-column-end: span 5; }
-  .grid-span6 { grid-column-end: span 6; }
   
-  /* .navigation {
-    display: initial;
-  } */
-
   .header-menu {
     display: inline-flex;
   }
@@ -654,7 +594,5 @@ h6 {
   .contents {
     grid-template-columns: auto auto auto auto auto auto; 
     grid-template-rows: 161.82px 510.54px 453.68px 470.94px;  
-  }
-
- 
+  } 
 }
