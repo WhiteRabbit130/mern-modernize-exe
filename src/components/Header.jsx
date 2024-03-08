@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 export default function Header(props) {
-    const { toggleNavbar } = props;
+    const { toggleNavbar } = props;   
 
     return (
         <header className='header'>

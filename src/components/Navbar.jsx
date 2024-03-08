@@ -1,6 +1,13 @@
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import { Link, useLocation  } from "react-router-dom";
 
 const Navbar = () => {
+    const { pathname } = useLocation();
+
+    // const handleItemClick = (pathname) => {
+    //     setActiveItem(pathname);
+    // };
+
     return (
         <div className='navigation' id='navigation'>
           <div className="nav-bar">
@@ -14,7 +21,7 @@ const Navbar = () => {
                 <div className="navbar-content">
                   <ul className="navbar-items">
                     <li className="nav-sub-header">Home</li>
-                    <li className="nav-item">
+                    <li className={"nav-item " + (pathname === '/' ? 'active' : '')}>
                       <Link tabIndex="0" to="/" aria-current="page" className="" target="">
                         <div className="icon-nav-item">
                           <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-aperture" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle><path d="M3.6 15h10.55"></path><path d="M6.551 4.938l3.26 10.034"></path><path d="M17.032 4.636l-8.535 6.201"></path><path d="M20.559 14.51l-8.535 -6.201"></path><path d="M12.257 20.916l3.261 -10.034"></path></svg>
@@ -72,7 +79,7 @@ const Navbar = () => {
                         <span className=""></span>
                       </Link>
                     </li>
-                    <li className="nav-item">
+                    <li className={"nav-item " + (pathname.includes('/chat') ? 'active' : '')}>
                       <Link tabIndex="0" to="/chat" aria-current="page" className="" target="">
                         <div className="icon-nav-item">
                           <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-message-2" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 20l-3 -3h-2a3 3 0 0 1 -3 -3v-6a3 3 0 0 1 3 -3h10a3 3 0 0 1 3 3v6a3 3 0 0 1 -3 3h-2l-3 3"></path><line x1="8" y1="9" x2="16" y2="9"></line><line x1="8" y1="13" x2="14" y2="13"></line></svg>
