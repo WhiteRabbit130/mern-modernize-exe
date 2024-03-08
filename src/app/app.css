@@ -5,9 +5,9 @@
 body {
   margin: 0;
   color: rgb(42, 53, 71);
-  /* font-size: 0.875rem;
+  font-size: 0.875rem;
   font-weight: 400;
-  line-height: 1.334rem; */
+  line-height: 1.334rem;
   font-family: "Plus Jakarta Sans", sans-serif;
   background-color: rgb(255, 255, 255);
 }
@@ -48,6 +48,7 @@ h6 {
   font-weight: 600;
   font-size: 1rem;
   line-height: 1.2rem;
+  /* font-family: "Plus Jakarta Sans", sans-serif; */
 }
 
 .subtitle1 {
@@ -97,7 +98,7 @@ h6 {
 
 /*--------------- Navigation CSS ---------------*/
 .navigation {
-  display: none;
+  /* display: none; */
   width: 270px;
   flex-shrink: 0;
 }
@@ -634,9 +635,9 @@ h6 {
   .grid-span5 { grid-column-end: span 5; }
   .grid-span6 { grid-column-end: span 6; }
   
-  .navigation {
+  /* .navigation {
     display: initial;
-  }
+  } */
 
   .header-menu {
     display: inline-flex;
