@@ -15,7 +15,6 @@ const Chat = () => {
     const handleChange = (e) => {
         const value = e.target.value;
         setInputData(value);
-        localStorage.setItem('inputData', value);
     };
 
     return (
