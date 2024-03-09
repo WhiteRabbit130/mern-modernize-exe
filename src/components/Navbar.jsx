@@ -17,7 +17,7 @@ const Navbar = () => {
               </Link>
             </div>
             <div className="navbar-body">
-              <div className="navbar-wrapper">
+              {/* <div className="navbar-wrapper"> */}
                 <div className="navbar-content">
                   <ul className="navbar-items">
                     <li className="nav-sub-header">Home</li>
@@ -191,7 +191,7 @@ const Navbar = () => {
                     </li>
                   </ul>
                 </div>
-              </div>
+              {/* </div> */}
             </div>
             <div className="navbar-footer">
               <div className="nb-profile rh-border">

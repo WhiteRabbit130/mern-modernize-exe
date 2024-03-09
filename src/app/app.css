@@ -178,7 +178,6 @@ h6 {
 .nav-sub-header {
   box-sizing: border-box;
   list-style: none;
-  /* font-family: "Plus Jakarta Sans", sans-serif; */
   font-weight: 700;
   font-size: 0.75rem;
   line-height: 26px;
@@ -209,12 +208,10 @@ h6 {
 }
 
 .nav-item > a {
-  -webkit-tap-highlight-color: transparent;
   outline: 0px;
   border: 0px;
   margin: 0px 0px 2px;
   cursor: pointer;
-  user-select: none;
   vertical-align: middle;
   appearance: none;
   display: flex;
@@ -308,13 +305,11 @@ h6 {
   justify-content: center;
   position: relative;
   box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
   background-color: transparent;
   outline: 0px;
   border: 0px;
   margin: 0px;
   cursor: pointer;
-  user-select: none;
   vertical-align: middle;
   appearance: none;
   text-decoration: none;
