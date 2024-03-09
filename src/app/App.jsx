@@ -36,12 +36,12 @@ function App() {
         { showNavbar && <Navbar /> }
 
         <div className="container">
-          <Header toggleNavbar={ toggleNavbar } />
+          <Header toggleNavbar={toggleNavbar} />
 
           <div className="main-content">
             <Routes>
-              <Route path="/" exact element={ <Home />} />              
-              <Route path="/chat" exact element={ <Chat />} /> 
+              <Route path="/" exact element={<Home />} />              
+              <Route path="/chat" exact element={<Chat />} /> 
             </Routes>
           </div>
         </div>
