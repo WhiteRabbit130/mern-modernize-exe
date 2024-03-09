@@ -21,6 +21,7 @@ const Chat = () => {
         <>
             <input type="text" className="msg-box" value={inputData} onChange={handleChange} ></input>
             <p>You typed: {inputData}</p>
+            <button onClick={goToHome}>Go to Home</button>
         </>
     )
 }
