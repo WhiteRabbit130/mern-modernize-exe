@@ -3,11 +3,7 @@ import { Link, useLocation  } from "react-router-dom";
 
 const Navbar = () => {
     const { pathname } = useLocation();
-
-    // const handleItemClick = (pathname) => {
-    //     setActiveItem(pathname);
-    // };
-
+  
     return (
       <div className='navigation' id='navigation'>
         <div className="nav-bar">
